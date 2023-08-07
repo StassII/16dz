@@ -1,0 +1,651 @@
+@mixin Jost($weight,$size){
+    font-weight: $weight;
+    font-size: $size;
+}
+@mixin Istok($weight,$size){
+    font-weight: $weight;
+    font-size: $size;
+}
+.header{
+    width: 100%;
+    height: 65px;
+    background: tomato;
+    &_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 65px;
+        background: #010632;
+        &_wrapper{
+            display: flex;
+            align-items: center;
+            width: 1000px;
+            height: 100%;
+            justify-content: space-between;
+            &_fundraising{
+                @include Jost(400,24px);
+                color: white;
+            }
+            &_about{
+                @include Jost(400,24px);
+                color: white;
+            }
+            &_logo{
+                color: white;
+                @include Istok(700,48px);
+            }
+            &_donat{
+                @include Jost(400,24px);
+                color: white;
+            }
+        }
+    }
+
+}
+.Preview{
+    display: flex;
+    width: 100%;
+    height: 711px;
+    background: darkgreen;
+    &_left{
+        height:100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-grow: 1;
+        &_img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &_centr{
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-grow: 1;
+        &_img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &_right{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-grow: 1;
+        &_img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.main{
+    &_help{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 461px;
+        background: #010632;
+        &_wrapper{
+            display: flex;
+            justify-content: space-between;
+            width: 1164px;
+            height: 366px;
+            &_text{
+                width: 420px;
+                &_title{
+                    @include Istok(700,48px);
+                    color: white;
+                }
+                &_sub-title{
+                    padding-top: 10px;
+                    @include Jost(400,24px);
+                    color: white;
+                }
+            }
+            &_images{
+                width: 665px;
+                height: 364px;
+                display: flex;
+                justify-content: space-between;
+                &_one{
+                    width: 365px;
+                    height: 251px;
+                    &_img{
+                        width: 365px;
+                        height: 251px;
+                    }
+                }
+                &_two{
+                    position: relative;
+                    top: 159px;
+                    width: 265px;
+                    height: 203px;
+                    &_img{
+                        width: 285px;
+                        height: 203px;
+                    }
+                }
+            }
+        }
+    }
+    &_about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 461px;
+        background: #060D49;
+        &_wrapper{
+            display: flex;
+            width: 1165px;
+            height: 364px;
+            justify-content: space-between;
+            align-items: center;
+            &_img{
+                display: flex;
+                width: 665px;
+                height: 364px;
+                justify-content: space-between;
+                &_one{
+                    width: 365px;
+                    height: 251px;
+                    &_png{
+                        width: 365px;
+                        height: 251px;
+                    }
+                }
+                &_two{
+                    position: relative;
+                    top: 161px;
+                    width: 265px;
+                    height: 203px;
+                    &_png{
+                        width: 265px;
+                        height: 203px;
+                    }
+                }
+            }
+            &_text{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                width: 414px;
+                height: 301px;
+                &_title{
+                    @include Istok(700,48px);
+                    color: white;
+                }
+                &_sub-title{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+            }
+        }
+    }
+    &_Ukraine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 773px;
+        background: #010632;
+        &_wrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 1165px;
+            height: 708px;
+            &_text{
+                width: 780px;
+                height: auto;
+                @include Istok(700,48px);
+                text-align: center;
+                color: white;
+            }
+            &_imgs{
+                display: flex;
+                width: 100%;
+                height: 549px;
+                justify-content: space-between;
+                &_left-container{
+                    margin-top: 22px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 21px;
+                    width: 765px;
+                    height: 549px;
+                    &_group1{
+                        display: flex;
+                        align-items: center;
+                        width: 764px;
+                        height: 264px;
+                        justify-content: space-between;
+                        &_right-container{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 21px;
+                            width: 364px;
+                            height: 264px;
+                        }
+                    }
+                    &_group2{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 765px;
+                        height: 264px;
+                    }
+                }
+            }
+        }
+    }
+    &_proects{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 857px;
+        background: rgba(6, 13, 73, 1);
+        &_wrapper{
+            width: 1165px;
+            height: 621px;
+            &_title{
+                text-align: center;
+                @include Istok(700,48px);
+                color:white;
+            }
+            &_container{
+                display: flex;
+                column-gap: 35px;
+                margin-top: 65px;
+                width: 100%;
+                height: 487px;
+                &_card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 365px;
+                    height: 487px;
+                    background: white;
+                    align-items: center;
+                    padding-top: 26px;
+                    &_title{
+                        @include Istok(700,48px)
+                    }
+                    &_sub-title{
+                        padding-top: 9px;
+                        @include Jost(400,24px)
+                    }
+                    &_sub-title2{
+                        @include Jost(400,24px)
+                    }
+                    &_line{
+                        margin-top: 19px;
+                    }
+                    &_button{
+                        width: 235px;
+                        height: 61px;
+                        border: none;
+                        background: #0057FF;
+                        border-radius: 15px;
+                        margin-top: 18px;
+                        @include Jost(400,24px);
+                        color:white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    &_proects{
+        &_wrapper{
+            &_title{
+                margin-top: 0;
+                @include Istok(700,48px)
+            }
+        }
+    }
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 349px;
+    background: #010632;
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1065.04px;
+        height: 298px;
+        &_logo{
+            text-align: center;
+            @include Jost(700,48px);
+            color: white;
+        }
+        &_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_politika-container{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                width: 481.332px;
+                height: 151px;
+
+                &_politika-title{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+                &_privacy{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+                &_processing{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+            }
+            &_social-container{
+                display: flex;
+                column-gap: 34.09px;
+                width: 265.045px;
+                height: 64px;
+            }
+        }
+
+        &_C{
+            @include Jost(400,24px);
+            color: white;
+            text-align: center;
+        }
+    }
+}
+.style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65.04px;
+    height: 64px;
+    border-radius: 50%;
+    background: yellow;
+}
+.blue{
+    color: blue;
+}
+.yellow{
+    color: yellow;
+}
+@media screen and (max-width:375px){
+    .header{
+        &_info{
+            &_wrapper{
+                &_fundraising{
+                    display: none;
+                }
+                &_about{
+                    display: none;
+                }
+                &_logo{
+                    margin: 0 auto;
+                    @include Jost(400,24px)
+                }
+                &_donat{
+                    display: none;
+                }
+            }
+        }
+    }
+    .Preview{
+        height: 412px;
+    }
+    .main{
+        &_help{
+            &_wrapper{
+                display: block;
+                width: 306px;
+                &_text{
+                    width: 295px;
+                    &_title{
+                        @include Istok(700,24px)
+                    }
+                    &_sub-title{
+                        display: none;
+                    }
+                    &_sub-title-mob{
+                        margin-top: 10px;
+                        @include Jost(400,16px);
+                        color: white;
+                    }
+                }
+                &_images{
+                    margin-top: 10px;
+                    width: 301px;
+                    height: 263px;
+                    &_one{
+                        width: 169px;
+                        height: 154px;
+                        flex-grow: 1;
+                        &_img{
+                            width: 169px;
+                            height: 154px;
+                        }
+                    }
+                    &_two{
+                        position: relative;
+                        top: 154px;
+                        left: -54px;
+                        width: 175px;
+                        height: 109px;
+                        flex-grow: 1;
+                        &_img{
+                            width: 175px;
+                            height: 109px;
+                        }
+                    }
+                }
+            }
+        }
+        &_about{
+            &_wrapper{
+                display: block;
+                width: 305px;
+                height: 332px;
+                &_img{
+                    width: 100%;
+                    height: 213px;
+                    &_one{
+                        width: 181px;
+                        height: 124px;
+                        &_png{
+                            width: 181px;
+                            height: 124px;
+                        }
+                    }
+                    &_two{
+                        position: relative;
+                        top: 124px;
+                        width: 132px;
+                        height: 86px;
+                        &_png{
+                            width: 132px;
+                            height: 86px;
+                        }
+                    }
+                }
+                &_text{
+                    position: absolute;
+                    top: 1178px;
+                    width: 374px;
+                    &_title{
+                        width: 374px;
+                        @include Istok(700,24px)
+                    }
+                    &_sub-title{
+                        width: 274px;
+                        @include Jost(400,16px)
+                    }
+                }
+            }
+        }
+        &_Ukraine{
+            &_wrapper{
+                &_text{
+                    width: 317px;
+                    @include Istok(400,16px);
+                }
+                &_imgs{
+                    display: flex;
+                    width: 304px;
+                    height: 374px;
+                    &_left-container{
+                        width: 150px;
+                        flex-direction: row-reverse;
+                        justify-content: start;
+                        column-gap: 16px;
+                        &_group1{
+                            display: flex;
+                            flex-direction: column;
+                            width: 150px;
+                            height: 374px;
+                            row-gap: 8px;
+                            &_left{
+                                width: 144px;
+                                height: 328px;
+                            }
+                            &_right-container{
+                                width: 150px;
+                                height: 128px;
+                                &_top{
+                                   display: none;
+                                }
+                                &_down{
+                                    width: 150px;
+                                    height: 128px;
+                                }
+                            }
+                        }
+                        &_group2{
+                            width: 144px;
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 13px;
+                            &_left{
+                                width: 144px;
+                                height: 154px;
+                            }
+                            &_right{
+                                width: 138px;
+                                height: 207px;
+                            }
+                        }
+                    }
+                    &_long{
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+        &_proects{
+            height: 1223px;
+            align-items: normal;
+            &_wrapper{
+                &_title{
+                    margin-top: 0;
+                    @include Istok(700,20px)
+                }
+                &_container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &_card{
+                        width: 279px;
+                        height: 347px;
+                        &_img{
+                            width: 257px;
+                            height: 166px;
+                        }
+                        &_title{
+                            @include Jost(700,24px)
+                        }
+                        &_sub-title{
+                            @include Jost(400,16px)
+                        }
+                        &_sub-title2{
+                            @include Jost(400,24px)
+                        }
+                        &_button{
+                            width: 179px;
+                            height: 43px;
+                            @include Jost(400,20px)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &_wrapper{
+            width: 277px;
+            height: 272px;
+            &_logo{
+                @include Istok(400,24px)
+            }
+            &_content{
+                display: block;
+                width: 374px;
+                &_politika-container{
+                    height:103px;
+                    width: 277px;
+                    &_processing{
+                        @include Istok(400,16px)
+                    }
+                    &_privacy{
+                        @include Istok(400,16px)
+                    }
+                    &_politika-title{
+                        width: 374px;
+                        @include Istok(400,16px)
+                    }
+                }
+                &_social-container{
+                    margin-top: 48px;
+                    column-gap: 39px;
+                    justify-content: center;
+                    &_instagram{
+                        width: 39px;
+                        height: 36px;
+                        &_img{
+                            width: 22.515px;
+                            height: 22.634px;
+                        }
+                    }
+                    &_facebook{
+                        width: 38.89px;
+                        height: 36.009px;
+                        &_img{
+                            width: 22.515px;
+                            height: 22.634px;
+                        }
+                    }
+                    &_twitter{
+                        width: 38.89px;
+                        height: 36.009px;
+                        &_img{
+                            width: 22.515px;
+                            height: 22.634px;
+                        }
+                    }
+                }
+            }
+            &_C{
+                @include Istok(400,12px)
+            }
+        }
+    }
+}
